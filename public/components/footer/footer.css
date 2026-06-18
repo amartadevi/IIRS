@@ -1,0 +1,151 @@
+/* ============================================================
+   FOOTER.CSS
+   ============================================================ */
+
+:root {
+    --color-primary: #0a1f44;
+    --color-primary-dark: #071535;
+    --color-accent: #f5a623;
+}
+
+/* ── Footer Main ──────────────────────────────────────────── */
+.probootstrap-footer {
+    background: linear-gradient(180deg, #0d2350 0%, var(--color-primary-dark) 100%);
+    border-top: 3px solid var(--color-accent);
+}
+
+.footer-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.65rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Quick Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-links a i {
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    transition: transform 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-accent);
+    padding-left: 4px;
+}
+
+.footer-links a:hover i {
+    transform: translateX(3px);
+}
+
+/* Contact Info */
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 0.9rem;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.88rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+.footer-contact i {
+    color: var(--color-accent);
+    font-size: 0.95rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* ── Copyright Bar ────────────────────────────────────────── */
+.probootstrap-copyright {
+    background: var(--color-primary);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── Social Icon Buttons ──────────────────────────────────── */
+.social-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-size: 0.9rem;
+    transition: all 0.28s ease;
+    text-decoration: none;
+}
+
+.social-icon-btn:hover {
+    background: var(--color-accent);
+    color: white !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(245, 166, 35, 0.35);
+}
+
+/* ── Back to Top Button ───────────────────────────────────── */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 46px;
+    height: 46px;
+    background: linear-gradient(135deg, var(--color-accent), #e09210);
+    color: white !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    box-shadow: 0 6px 20px rgba(245, 166, 35, 0.40);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(245, 166, 35, 0.50);
+}

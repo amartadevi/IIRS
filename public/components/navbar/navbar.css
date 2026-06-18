@@ -1,0 +1,264 @@
+/* ============================================================
+   NAVBAR.CSS — Sticky Navigation
+   ============================================================ */
+
+:root {
+    --color-primary:       #0a1f44;
+    --color-primary-dark:  #071535;
+    --color-accent:        #f5a623;
+    --color-accent-hover:  #e09210;
+}
+
+/* ── Top Utility Bar ──────────────────────────────────────── */
+.top-header {
+    background-color: var(--color-primary-dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 0.82rem;
+}
+
+.top-header .contact-info span {
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+.top-header .contact-info span:hover {
+    color: var(--color-accent);
+}
+
+.top-header .contact-info i {
+    color: var(--color-accent);
+    font-size: 0.85rem;
+}
+
+.top-header .utility-link {
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.top-header .utility-link:hover {
+    color: var(--color-accent) !important;
+    transform: translateY(-1px);
+}
+
+.top-header .social-icon {
+    font-size: 0.9rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.top-header .social-icon:hover {
+    color: var(--color-accent) !important;
+    transform: scale(1.15);
+}
+
+/* ── Main Navigation Bar ──────────────────────────────────── */
+.main-header {
+    background-color: var(--color-primary);
+    box-shadow: 0 4px 24px rgba(10, 31, 68, 0.20);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.main-header.scrolled {
+    background-color: rgba(7, 21, 53, 0.97);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 6px 30px rgba(10, 31, 68, 0.35);
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+}
+
+.navbar-brand img {
+    transition: all 0.3s ease;
+}
+
+/* ── Nav Links & Hover Underline ──────────────────────────── */
+.navbar-nav .nav-link {
+    position: relative;
+    color: rgba(255, 255, 255, 0.88) !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.84rem;
+    padding: 0.5rem 0.85rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-accent) !important;
+    transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--color-accent) !important;
+}
+
+/* Animated underline */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0px;
+    left: 0.85rem;
+    background-color: var(--color-accent);
+    transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: calc(100% - 1.7rem);
+}
+
+/* ── Accent CTA Button in Nav ──────────────────────────────── */
+.btn-accent {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));
+    color: white !important;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    box-shadow: 0 4px 12px rgba(245, 166, 35, 0.20);
+    transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(245, 166, 35, 0.40);
+    filter: brightness(1.06);
+}
+
+/* ── Mobile Offcanvas Drawer ──────────────────────────────── */
+.offcanvas {
+    background-color: var(--color-primary) !important;
+    max-width: 300px;
+    border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.offcanvas-body .nav-link {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease;
+}
+
+.offcanvas-body .nav-link:hover,
+.offcanvas-body .nav-link.active {
+    color: var(--color-accent) !important;
+    background-color: rgba(245, 166, 35, 0.04);
+    padding-left: 1.5rem;
+}
+
+.offcanvas-body .nav-link::after {
+    display: none;
+}
+
+.bg-dark-slate {
+    background-color: var(--color-primary) !important;
+}
+
+.text-accent {
+    color: var(--color-accent) !important;
+}
+
+.fs-7 { font-size: 0.85rem !important; }
+
+/* ── Logo Block ───────────────────────────────────────────── */
+.logo-wrapper {
+    width: 58px;
+    height: 58px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(245, 166, 35, 0.3);
+}
+
+.logo-wrapper img {
+    height: 58px;
+    width: auto;
+    max-width: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.logo-title {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo-subtitle {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    line-height: 1.15;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ── Social Icon Buttons (Mobile Drawer) ─────────────────── */
+.social-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 0.9rem;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.social-icon-btn:hover {
+    background: var(--color-accent);
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 480px) {
+    .logo-wrapper {
+        width: 46px;
+        height: 46px;
+    }
+    .logo-wrapper img {
+        height: 46px;
+    }
+    .logo-text {
+        max-width: 140px;
+    }
+    .logo-title {
+        font-size: 0.62rem;
+    }
+    .logo-subtitle {
+        font-size: 0.75rem;
+    }
+}

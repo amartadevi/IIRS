@@ -1,0 +1,384 @@
+/* ============================================================
+   About Page Styles — Isra University EE Department
+   ============================================================ */
+
+/* ── Hero Banner ─────────────────────────────────────────── */
+.about-hero-banner {
+  position: relative;
+  min-height: 380px;
+  background: var(--color-primary-dark);
+  padding: 100px 0 60px;
+}
+
+.about-hero-overlay {
+  display: none;
+}
+
+.about-hero-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.2;
+}
+
+.about-hero-subtitle {
+  font-size: 1.05rem;
+  max-width: 540px;
+}
+
+.about-breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.about-breadcrumb .breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.about-breadcrumb .breadcrumb-item a:hover {
+  color: var(--color-accent);
+}
+
+.about-breadcrumb .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.about-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* ── Vision & Mission Cards ───────────────────────────────── */
+.about-vm-section {
+  background: #f5f7fa;
+}
+
+.vm-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(31, 40, 55, 0.12) !important;
+}
+
+.vm-card-vision {
+  background: linear-gradient(135deg, #1F2837 0%, #2c3e50 100%);
+}
+
+.vm-card-mission {
+  background: #ffffff;
+  border: 1px solid #e8ecf0;
+}
+
+.vm-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.vm-card-vision .vm-icon {
+  background: rgba(243, 156, 18, 0.18);
+  color: var(--color-accent);
+}
+
+.vm-card-mission .vm-icon {
+  background: rgba(31, 40, 55, 0.08);
+  color: var(--color-primary-dark);
+}
+
+.vm-label {
+  letter-spacing: 1.5px;
+}
+
+.vm-card-vision .vm-label { color: rgba(255,255,255,0.5); }
+.vm-card-mission .vm-label { color: var(--color-text-muted); }
+
+.vm-title {
+  font-size: 1.65rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.vm-card-vision .vm-title { color: #ffffff; }
+.vm-card-mission .vm-title { color: var(--color-primary-dark); }
+
+.vm-text {
+  line-height: 1.8;
+  font-size: 0.97rem;
+}
+
+.vm-card-vision .vm-text { color: rgba(255, 255, 255, 0.75); }
+.vm-card-mission .vm-text { color: var(--color-text-muted); }
+
+/* ── Stats Strip ─────────────────────────────────────────── */
+.about-stats-section {
+  background: var(--color-primary-dark);
+}
+
+.about-stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.about-stat-card:hover {
+  background: rgba(243, 156, 18, 0.12);
+  transform: translateY(-4px);
+}
+
+.stat-icon {
+  font-size: 1.6rem;
+  color: var(--color-accent);
+}
+
+.stat-number {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.5px;
+}
+
+/* ── Section Banner (colored header bars) ────────────────── */
+.about-section-banner {
+  position: relative;
+  background: var(--color-primary-dark);
+}
+
+.about-section-banner-overlay {
+  display: none;
+}
+
+/* ── HOD Message ─────────────────────────────────────────── */
+.hod-photo-wrapper {
+  padding-bottom: 20px; /* space for the badge */
+}
+
+.hod-photo {
+  object-fit: cover;
+  object-position: top center;
+  max-height: 460px;
+  display: block;
+}
+
+.hod-photo-badge {
+  background: linear-gradient(135deg, var(--color-primary-dark), #2c3e50);
+  transform: translateY(50%);
+}
+
+.hod-quote-mark {
+  font-size: 4rem;
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: -10px;
+  opacity: 0.5;
+}
+
+.hod-message-body {
+  padding-top: 10px;
+}
+
+.hod-signature {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 16px;
+}
+
+/* ── Career Opportunities ────────────────────────────────── */
+.about-careers-section {
+  background: #f5f7fa;
+}
+
+.section-label {
+  letter-spacing: 2px;
+}
+
+.section-title-main {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+.career-card {
+  background: #ffffff;
+  border: 1px solid #e8ecf0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(31, 40, 55, 0.1) !important;
+  border-color: var(--color-accent);
+}
+
+.career-icon {
+  transition: transform 0.3s ease;
+}
+
+.career-card:hover .career-icon {
+  transform: scale(1.15);
+}
+
+.career-title {
+  font-size: 0.88rem;
+  color: var(--color-primary-dark);
+  line-height: 1.4;
+}
+
+/* ── Accreditation Timeline ──────────────────────────────── */
+.accreditation-timeline {
+  position: relative;
+  padding-left: 24px;
+  border-left: 3px solid #e8ecf0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 28px;
+  padding-bottom: 30px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -39px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #e8ecf0;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #e8ecf0;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item-latest .timeline-dot {
+  background: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.3);
+}
+
+.timeline-year {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  margin-bottom: 4px;
+}
+
+.timeline-event {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ── Accreditation Batches ───────────────────────────────── */
+.batch-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.batch-badge-full {
+  background: rgba(39, 174, 96, 0.12);
+  color: #27ae60;
+  border: 1px solid rgba(39, 174, 96, 0.25);
+}
+
+.batch-badge-pending {
+  background: rgba(243, 156, 18, 0.12);
+  color: #e67e22;
+  border: 1px solid rgba(243, 156, 18, 0.3);
+}
+
+/* ── Accreditation Bodies ────────────────────────────────── */
+.accreditation-bodies {
+  border-top: 1px solid #e8ecf0;
+  padding-top: 24px;
+}
+
+.acc-body-divider {
+  width: 1px;
+  height: 50px;
+  background: #e8ecf0;
+}
+
+/* ── CTA Strip ───────────────────────────────────────────── */
+.about-cta-section {
+  position: relative;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, #2c3e50 100%);
+  overflow: hidden;
+}
+
+.about-cta-section::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(243, 156, 18, 0.07);
+  pointer-events: none;
+}
+
+.about-cta-section::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgba(243, 156, 18, 0.05);
+  pointer-events: none;
+}
+
+/* ── Responsive Adjustments ──────────────────────────────── */
+@media (max-width: 767.98px) {
+  .about-hero-banner {
+    min-height: 280px;
+    padding: 70px 0 40px;
+  }
+
+  .hod-photo-badge {
+    position: static !important;
+    transform: none !important;
+    margin: 12px 0 0 !important;
+    border-radius: 8px;
+  }
+
+  .accreditation-bodies {
+    justify-content: center;
+  }
+
+  .acc-body-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .vm-card {
+    padding: 1.5rem !important;
+  }
+}

@@ -1,0 +1,146 @@
+/* ============================================================
+   SLIDER.CSS — Premium Custom Flexslider
+   ============================================================ */
+
+.flexslider {
+    position: relative;
+    height: calc(100vh - 145px);
+    /* Subtract top bar + navbar height */
+    width: 100%;
+    overflow: hidden;
+    background-color: #071535;
+    /* Deep Navy Base */
+}
+
+/* Premium bottom border divider with horizontal gradient fade and glowing shadow */
+.flexslider::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            #f5a623 15%,
+            #f5a623 85%,
+            transparent 100%);
+    z-index: 10;
+    box-shadow: 0 -2px 15px rgba(245, 166, 35, 0.5);
+}
+
+@media (max-width: 991.98px) {
+    .flexslider {
+        height: calc(100vh - 100px);
+        /* Adjust height on smaller viewports */
+    }
+}
+
+.flexslider .slides {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-item.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    /* Clean transparency on slider images to blend with background */
+    z-index: 1;
+    transform: scale(1.05);
+    transition: transform 10s ease;
+}
+
+.slide-item.active .slide-bg {
+    transform: scale(1);
+}
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(7, 21, 53, 0.3) 0%,
+            rgba(7, 21, 53, 0.75) 90%);
+    z-index: 2;
+}
+
+.slide-item .container {
+    position: relative;
+    z-index: 3;
+}
+
+.probootstrap-slider-text {
+    position: relative;
+    color: #ffffff;
+    padding: 0 15px;
+}
+
+.probootstrap-heading {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff !important;
+    font-size: clamp(1.72rem, 4vw, 3.2rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    margin: 0;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    line-height: 1.2;
+    opacity: 0;
+}
+
+.probootstrap-heading .highlight {
+    color: #f5a623;
+}
+
+/* Animate heading only on the active slide to prevent text ghosting/overlapping */
+.slide-item.active .probootstrap-heading {
+    animation: scaleUpFade 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s forwards;
+}
+
+.slide-item:not(.active) .probootstrap-heading {
+    opacity: 0;
+}
+
+@keyframes scaleUpFade {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}

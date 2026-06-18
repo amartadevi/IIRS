@@ -1,0 +1,275 @@
+/* Your custom css code goes here */
+.image-program-bg img {
+      width: 100%;
+      vertical-align: middle;
+      border: 0;
+}
+.particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.float-nav {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 300;
+  opacity: 0.7;
+}
+.float-nav > a.menu-btn {
+  text-decoration: none;
+  display: block;
+  background-color:#6a43ec;
+  color: white;
+  padding: 17px 19px 12px 19px;
+  text-align: center;
+  box-shadow: 2px 2px 8px #777;
+  border-radius: 300px;
+}
+.float-nav > a.menu-btn.active {
+  transition: background-color 250ms linear;
+  background-color: transparent;
+  box-shadow: none;
+}
+.float-nav > a.menu-btn.active > ul > li.line:nth-child(1) {
+  border-width: 2px;
+  -moz-transform: rotate(45deg) translate(4px, 6px);
+  -ms-transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+  transform: rotate(45deg) translate(4px, 6px);
+}
+.float-nav > a.menu-btn.active > ul > li.line:nth-child(2) {
+  visibility: hidden;
+}
+.float-nav > a.menu-btn.active > ul > li.line:nth-child(3) {
+  border-width: 2px;
+  -moz-transform: rotate(-45deg) translate(8px, -10px);
+  -ms-transform: rotate(-45deg) translate(8px, -10px);
+  -webkit-transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-45deg) translate(8px, -10px);
+}
+.float-nav > a.menu-btn > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.float-nav > a.menu-btn > ul > li.line {
+  border: 1px solid white;
+  width: 100%;
+  margin-bottom: 7px;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.float-nav > a.menu-btn > .menu-txt {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.main-nav {
+  display: none;
+  opacity: 0.7;
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  transition: opacity 250ms;
+  z-index: 200;
+  position: fixed;
+}
+.main-nav.active {
+  display: block;
+  opacity: 0.7;
+  transition: opacity 250ms;
+}
+.main-nav > ul {
+  width: 100%;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color:#6a43ec;
+  box-shadow: 2px 2px 8px #777;
+  border-radius: 3px 3px 33.5px 3px;
+}
+.main-nav > ul > li > a {
+  text-decoration: none;
+  display: block;
+  font-weight: 200;
+  padding: 18px 80px 18px 18px;
+  color: white;
+}
+.main-nav > ul > li > a:hover {
+  font-weight: 400;
+}
+
+shadow {
+-webkit-border-radius: 0% 0% 100% 100% / 0% 0% 8px 8px;
+-webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
+border-radius: 0% 0% 100% 100% / 0% 0% 8px 8px;
+box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
+}
+
+.newscontainer {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: auto;
+  background: #F2F2F2;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 2px #fff inset,
+              -1px -1px 2px #fff inset;
+  border-radius: 3px/6px;         
+    
+    
+}
+#notFound {
+  width:100%;
+  height:auto;
+}
+
+.probootstrap-flex-block-50 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -200px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .probootstrap-flex-block-50 {
+    margin-top: -100px;
+  }
+}
+
+.probootstrap-flex-block-50 .probootstrap-text {
+  width: 52%;
+  margin-right: 20px;
+  background: #ffffff;
+  padding: 40px;
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .probootstrap-flex-block-50 .probootstrap-text {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.probootstrap-flex-block-50 .probootstrap-text h3 {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.probootstrap-flex-block-50 .probootstrap-text p:last-child {
+  margin-bottom: 0;
+}
+
+.probootstrap-flex-block-50 .probootstrap-image {
+  width: 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 0px;
+  position: relative;
+}
+
+.probootstrap-flex-block-50 .probootstrap-image .btn-video {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.probootstrap-flex-block-50 .probootstrap-image .btn-video i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 70px;
+  color: white;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.probootstrap-flex-block-50 .probootstrap-image .btn-video:before {
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.probootstrap-flex-block-50 .probootstrap-image .btn-video:hover:before {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .probootstrap-flex-block-50 .probootstrap-image {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .probootstrap-flex-block-50 .probootstrap-image {
+    width: 100%;
+    height: 200px;
+  }
+}
+ .probootstrap-heading {
+  font-size: 52px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 0;
+  line-height: 64px;
+  color: white;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+   .probootstrap-heading {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text-heading, .probootstrap-hero h1, .flexslider .probootstrap-heading {
+    font-size: 16px;
+  }
+}
+
+/* Custom slider layout overrides to ensure text is centered and visible */
+.flexslider .probootstrap-slider-text {
+  margin-top: 0 !important;
+}
+
+.flexslider .slide-item.active .probootstrap-heading {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Ensure slide items stretch to the full height of the slider container */
+.flexslider .slides > li {
+  height: 100% !important;
+}
+

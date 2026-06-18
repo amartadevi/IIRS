@@ -1,0 +1,201 @@
+/* ============================================================
+   Contact Page Styles — Isra University EE Department
+   ============================================================ */
+
+/* ── Page Banner ─────────────────────────────────────────── */
+.contact-banner {
+  min-height: 320px;
+  background: var(--color-primary-dark);
+  padding: 90px 0 50px;
+}
+
+.contact-banner-title {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+}
+
+.contact-banner-subtitle {
+  font-size: 1rem;
+  max-width: 480px;
+}
+
+.contact-breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-breadcrumb .breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-breadcrumb .breadcrumb-item a:hover {
+  color: var(--color-accent);
+}
+
+.contact-breadcrumb .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ── Info Strip ──────────────────────────────────────────── */
+.contact-info-strip {
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(31, 40, 55, 0.08);
+  position: relative;
+  z-index: 10;
+}
+
+.contact-info-bar {
+  border: 1px solid #e8ecf0;
+  border-radius: 0 0 12px 12px;
+}
+
+.contact-info-item {
+  border-right: 1px solid #e8ecf0;
+  transition: background 0.25s ease;
+}
+
+.contact-info-item:last-child {
+  border-right: none;
+}
+
+.contact-info-item:hover {
+  background: rgba(243, 156, 18, 0.04);
+}
+
+.contact-info-icon {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 12px;
+  background: rgba(243, 156, 18, 0.1);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.contact-info-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.contact-info-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary-dark) !important;
+}
+
+/* ── Main Section Background ─────────────────────────────── */
+.contact-main-section {
+  background: #f5f7fa;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────── */
+.contact-sidebar-image img {
+  transition: transform 0.4s ease;
+}
+
+.contact-sidebar-image:hover img {
+  transform: scale(1.03);
+}
+
+.contact-quick-card {
+  background: #ffffff;
+  border: 1px solid #e8ecf0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-quick-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(31, 40, 55, 0.08);
+}
+
+.cq-icon {
+  font-size: 1.3rem;
+  min-width: 28px;
+  margin-top: 2px;
+}
+
+.cq-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.cq-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  line-height: 1.5;
+}
+
+/* ── Contact Form ────────────────────────────────────────── */
+.contact-form-wrapper {
+  background: #ffffff;
+}
+
+.contact-input {
+  border: 1.5px solid #e0e6ed;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.92rem;
+  color: var(--color-primary-dark);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  background: #fafbfc;
+}
+
+.contact-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.12);
+  background: #fff;
+  outline: none;
+}
+
+.contact-input::placeholder {
+  color: #b0bec5;
+  font-size: 0.87rem;
+}
+
+.contact-form .form-label {
+  color: var(--color-primary-dark);
+  margin-bottom: 6px;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 767.98px) {
+  .contact-banner {
+    min-height: 240px;
+    padding: 70px 0 40px;
+  }
+
+  .contact-info-item {
+    border-right: none;
+    border-bottom: 1px solid #e8ecf0;
+  }
+
+  .contact-info-item:last-child {
+    border-bottom: none;
+  }
+
+  .contact-info-bar {
+    border-radius: 0;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.5rem !important;
+  }
+}

@@ -1,0 +1,165 @@
+/* ============================================================
+   OFFERED PROGRAMS CSS
+   ============================================================ */
+
+/* ── Section Header Banner ────────────────────────────────── */
+.probootstrap-section-colored {
+    background: linear-gradient(135deg, #0a1f44 0%, #122954 100%);
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.probootstrap-section-colored h1,
+.probootstrap-section-colored h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* ── Horizontal Program Card ──────────────────────────────── */
+.program-card-horizontal {
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(10, 31, 68, 0.08);
+    border: 1px solid rgba(10, 31, 68, 0.05) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    min-height: 260px;
+    overflow: hidden;
+}
+
+.program-card-horizontal:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 44px rgba(10, 31, 68, 0.12);
+}
+
+/* Left Image */
+.program-card-horizontal .card-image-wrapper {
+    width: 40%;
+    min-height: 260px;
+    overflow: hidden;
+    background-color: #f4f6f9;
+    position: relative;
+}
+
+.program-card-horizontal .card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.program-card-horizontal:hover .card-image-wrapper img {
+    transform: scale(1.06);
+}
+
+/* Right Content */
+.program-card-horizontal .card-content-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.25rem 2.5rem;
+}
+
+/* Duration Meta */
+.program-card-horizontal .duration-meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    color: #6b7a8d;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.program-card-horizontal .duration-meta i {
+    color: #f5a623;
+}
+
+/* Program Title */
+.program-card-horizontal .program-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 1.25rem;
+    color: #0a1f44;
+}
+
+.program-card-horizontal .program-title a {
+    color: #0a1f44;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.program-card-horizontal .program-title a:hover {
+    color: #f5a623;
+}
+
+/* More Info Button */
+.program-card-horizontal .btn-more-info {
+    background: linear-gradient(135deg, #f5a623, #e09210);
+    color: #ffffff !important;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(245, 166, 35, 0.22);
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.program-card-horizontal .btn-more-info:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(245, 166, 35, 0.38);
+    filter: brightness(1.06);
+}
+
+/* Credit Hours */
+.program-card-horizontal .credit-meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.83rem;
+    color: #6b7a8d;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.program-card-horizontal .credit-meta::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f5a623;
+    flex-shrink: 0;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 767.98px) {
+    .program-card-horizontal {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .program-card-horizontal .card-image-wrapper {
+        width: 100%;
+        height: 210px;
+        min-height: 210px;
+    }
+
+    .program-card-horizontal .card-content-wrapper {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .program-card-horizontal .program-title {
+        font-size: 1.1rem;
+    }
+}

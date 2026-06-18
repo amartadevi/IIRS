@@ -1,0 +1,187 @@
+/* ============================================================
+   HOD MESSAGE CSS
+   ============================================================ */
+
+/* ── Section Banner (heading stripe) ─────────────────────── */
+.probootstrap-section-colored {
+    background: linear-gradient(135deg, #0a1f44 0%, #122954 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.probootstrap-section-colored::before {
+    content: '';
+    position: absolute;
+    top: -60%;
+    right: -5%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(245,166,35,0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* ── HOD Message Section ──────────────────────────────────── */
+.hod-message-section {
+    background-color: #ffffff;
+}
+
+/* Left: Photo Card */
+.hod-photo-card {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(10, 31, 68, 0.14);
+    position: relative;
+}
+
+.hod-photo-card img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.hod-photo-card:hover img {
+    transform: scale(1.03);
+}
+
+.hod-name-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(7,21,53,0.90) 100%);
+    padding: 2.5rem 1.5rem 1.5rem;
+    text-align: center;
+}
+
+.hod-name-badge .hod-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.15rem;
+}
+
+.hod-name-badge .hod-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.5px;
+}
+
+/* Right: Message Content */
+.hod-message-body {
+    padding-left: 0.5rem;
+}
+
+.hod-quote-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: rgba(245, 166, 35, 0.12);
+    border-radius: 50%;
+    color: #f5a623;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.hod-lead-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #0a1f44;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.hod-body-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+    color: #6b7a8d;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.hod-signature {
+    border-top: 2px solid rgba(245, 166, 35, 0.25);
+    padding-top: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.hod-signature .sig-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0a1f44;
+}
+
+.hod-signature .sig-role {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    color: #6b7a8d;
+    line-height: 1.5;
+}
+
+/* ── Rotating Gears ──────────────────────────────────────── */
+.gearcontainer {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.gear {
+    border: 12px solid #0a1f44;
+    border-radius: 50%;
+    position: relative;
+}
+
+.gear1 {
+    width: 140px;
+    height: 140px;
+    animation: spin 10s linear infinite;
+}
+
+.gear2 {
+    width: 80px;
+    height: 80px;
+    animation: spin 7s linear infinite reverse;
+    margin-top: -20px;
+    margin-left: 60px;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* Particles placeholder */
+.particles-js-container {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 991.98px) {
+    .hod-photo-card img {
+        height: 340px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hod-photo-card img {
+        height: 280px;
+    }
+
+    .hod-message-body {
+        padding-left: 0;
+        margin-top: 1.5rem;
+    }
+}

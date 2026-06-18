@@ -1,0 +1,210 @@
+/* ============================================================
+   TEACHERS.CSS — Faculty Cards (Homepage Preview + Directory)
+   ============================================================ */
+
+/* ── Teacher Card ─────────────────────────────────────────── */
+.probootstrap-teacher {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid rgba(10, 31, 68, 0.06) !important;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.probootstrap-teacher:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(10, 31, 68, 0.13) !important;
+    border-color: rgba(245, 166, 35, 0.20) !important;
+}
+
+/* ── Circular Avatar ──────────────────────────────────────── */
+.teacher-image {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #f5a623 !important;
+    box-shadow: 0 4px 16px rgba(245, 166, 35, 0.22);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.probootstrap-teacher:hover .teacher-image {
+    box-shadow: 0 6px 22px rgba(245, 166, 35, 0.40);
+}
+
+.teacher-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.probootstrap-teacher:hover .teacher-image img {
+    transform: scale(1.1);
+}
+
+/* ── Teacher Name & Text ──────────────────────────────────── */
+.probootstrap-teacher h3 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #0a1f44 !important;
+}
+
+.probootstrap-teacher .fs-8 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem !important;
+    color: #6b7a8d;
+    line-height: 1.4;
+}
+
+/* ── Designation Badge ────────────────────────────────────── */
+.probootstrap-teacher .badge {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.4px;
+    padding: 4px 12px !important;
+    border-radius: 20px;
+    background-color: rgba(10, 31, 68, 0.07) !important;
+    color: #0a1f44 !important;
+}
+
+/* ── Search & Filter Panel ───────────────────────────────── */
+.search-filter-card {
+    transition: var(--transition);
+    border: 1px solid var(--color-border) !important;
+}
+
+.search-filter-card:hover {
+    box-shadow: var(--shadow-md) !important;
+}
+
+.search-filter-card .input-group-text {
+    border-color: rgba(10, 31, 68, 0.08);
+}
+
+.search-filter-card .form-control {
+    border-color: rgba(10, 31, 68, 0.08);
+}
+
+.search-filter-card .form-control:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.15);
+}
+
+.filter-btn {
+    border-radius: 20px !important;
+    padding: 0.35rem 1.15rem !important;
+    font-size: 0.78rem !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: var(--font-heading);
+}
+
+.filter-btn.active {
+    background-color: var(--color-accent) !important;
+    border-color: var(--color-accent) !important;
+    color: var(--color-white) !important;
+    box-shadow: var(--shadow-glow);
+}
+
+/* ── Detailed Faculty Card (teachers.php page) ──────────── */
+.faculty-card {
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    text-align: left; /* override center align */
+    transition: transform 0.28s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.faculty-card-header-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+}
+
+.faculty-avatar-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--color-accent);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.4s ease;
+}
+
+.faculty-card:hover .faculty-avatar-wrapper {
+    transform: scale(1.06) rotate(3deg);
+}
+
+.faculty-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.faculty-name-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.faculty-name-title a {
+    color: var(--color-primary);
+    transition: color 0.2s ease;
+}
+
+.faculty-name-title a:hover {
+    color: var(--color-accent) !important;
+}
+
+.faculty-qual-sub {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.faculty-details-list {
+    font-family: var(--font-body);
+}
+
+.faculty-details-list strong {
+    font-family: var(--font-heading);
+    font-size: 0.65rem !important;
+    letter-spacing: 0.5px;
+}
+
+.break-word {
+    word-break: break-all;
+}
+
+.hover-accent {
+    transition: color 0.2s ease;
+}
+
+.hover-accent:hover {
+    color: var(--color-accent) !important;
+}
+
+/* ── Group Title (Faculty Directory) ─────────────────────── */
+.faculty-group-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0a1f44;
+    border-left: 4px solid #f5a623;
+    padding-left: 0.75rem;
+    margin: 2.5rem 0 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* ── Font size utility ────────────────────────────────────── */
+.fs-8 { font-size: 0.78rem !important; }
