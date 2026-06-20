@@ -11,8 +11,8 @@
         <div class="pe-md-4">
           <!-- Dual logos in footer -->
           <div class="d-flex align-items-center gap-3 mb-3">
-            <img src="{{ asset('storage/settings/isra_logo.png') }}" alt="Isra University" style="width:56px;height:56px;object-fit:contain;border-radius:50%;">
-            <img src="{{ asset('storage/settings/iirs_logo.png') }}" alt="IIRS Logo" style="width:56px;height:56px;object-fit:contain;border-radius:50%;">
+            <img src="{{ asset('storage/settings/isra_logo.png') }}" alt="Isra University" style="width:56px;height:56px;object-fit:contain;border-radius:50%;background:transparent;">
+            <img src="{{ asset('storage/settings/iirs_logo.png') }}" alt="IIRS Logo" style="width:56px;height:56px;object-fit:contain;border-radius:50%;background:transparent;">
           </div>
           <h4 class="footer-heading">About Isra University</h4>
           <p class="mb-0 text-white-50">The university is a non-profit organization, certified by Pakistan Centre for Philanthropy (PCP). The University is highly ranked by HEC. The easily accessible and beautiful campuses provide services that create an academic environment of learning and intellectual growth.</p>

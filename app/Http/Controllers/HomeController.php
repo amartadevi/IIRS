@@ -19,7 +19,7 @@ class HomeController extends Controller
     public function index()
     {
         $slides = Slide::orderBy('sort_order')->get();
-        $programs = Program::take(2)->get();
+        $programs = Program::take(3)->get();
         $newses = Newse::orderByDesc('date')->get();
         $events = Event::where('completed', 0)->get();
         $notices = Notice::orderByDesc('date')->get();
